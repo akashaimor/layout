@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout Mastery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>LayoutMaster<span>.AK</span></h1>
+        <ul>
+            <li><a href="#flexbox">Flexbox</a></li>
+            <li><a href="#grid">Grid</a></li>
+            <li><a href="#position">Position</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h2>Master the Modern Web</h2>
+        <p>Toggle controls to see how CSS properties change the flow of elements.</p>
+    </header>
+
+    <main>
+        <section id="flexbox">
+            <h3>1. Flexbox Mastery</h3>
+            <div class="controls">
+                <button onclick="setFlex('row')">Row</button>
+                <button onclick="setFlex('column')">Column</button>
+                <button onclick="setFlex('space-between')">Space Between</button>
+            </div>
+            <div class="container flex-container" id="flexBox">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+            </div>
+        </section>
+
+        <section id="grid">
+            <h3>2. CSS Grid Mastery</h3>
+            <p>A 2D system for complex layouts.</p>
+            <div class="container grid-container">
+                <div class="box item1">Header</div>
+                <div class="box item2">Sidebar</div>
+                <div class="box item3">Main Content</div>
+                <div class="box item4">Footer</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
